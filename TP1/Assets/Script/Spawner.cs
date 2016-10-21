@@ -25,10 +25,10 @@ public class Spawner : MonoBehaviour {
 
         if(dayID >= 60)
         {
-            int probability = Random.Range(0,500);
+            int probability = Random.Range(0,300);
             if (probability == 4 && spawnClones[0] == null)
             {
-                spawnClones[0] = Instantiate(spawnPrefabs[0], spawnLocations[0].transform.position, Quaternion.Euler(0, 0, 0)) as GameObject;
+                spawnCrystal();
             }
         }
     }
