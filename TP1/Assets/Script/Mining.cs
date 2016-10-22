@@ -1,28 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Mining : MonoBehaviour
+public class Mining : Spawner
 {
-    public Transform[] spawnLocations;
-    public GameObject[] spawnPrefabs;
-    public GameObject[] spawnClones;
-    public int dayID = 1;
+    public Transform[] chunkLocations;
+    public GameObject[] chunkPrefabs;
+    public GameObject[] chunkClones;
 
     void Start()
     {
-        spawnCrystals();
-      //  Destroy(spawnClones[0]);
+        chunkClones[0] = null;
     }
 
     void Update()
     {
-        dayID++;
-//        if (dayID % 7 == 0)
-//        {
- //           Destroy(spawnClones[0]);
-  //      }
+        if (dayID == tomorrowID && chunkClones[0] != null)
+        {
+            Destroy(chunkClones[0]);
+        }
      
-        if (dayID/10 > 30 && spawnClones[0] == null)
+        if (dayID/3 > 20 && chunkClones[0] == null)
         {
             spawnCrystals();
         }
@@ -35,7 +32,7 @@ public class Mining : MonoBehaviour
         {
             int rndXYZ = Random.Range(-40, 40);
             Vector3 locationDynamique = new Vector3(475 + rndXYZ, 2, 31 + rndXYZ);
-            spawnClones[0] = Instantiate(spawnPrefabs[0], spawnLocations[0].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
+            chunkClones[0] = Instantiate(chunkPrefabs[0], chunkLocations[0].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
         }
     }
 }

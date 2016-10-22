@@ -6,13 +6,18 @@ public class Spawner : MonoBehaviour {
     public Transform[] spawnLocations;
     public GameObject[] spawnPrefabs;
     public GameObject[] spawnClones;
-    public int dayID=1;
-    public int yesterdayID = 0;
+    protected int dayID=1;
+    protected int tomorrowID = 0;
+
+    public int getDayID()
+    {
+        return dayID;
+    }
 
     void Start()
     {
         spawnCrystal();
-        yesterdayID=1;
+        tomorrowID = 2;
     }
 
     void Update()
@@ -23,13 +28,14 @@ public class Spawner : MonoBehaviour {
             Destroy(spawnClones[0]);
         }
 
-        if(dayID >= 60)
+        if(dayID == tomorrowID)
         {
             int probability = Random.Range(0,300);
             if (probability == 4 && spawnClones[0] == null)
             {
                 spawnCrystal();
             }
+            tomorrowID++;
         }
     }
 

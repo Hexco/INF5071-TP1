@@ -542,13 +542,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade83d4acd1ce8240a6569fd977837bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnLocations:
+  spawnLocations: []
+  spawnPrefabs: []
+  spawnClones: []
+  chunkLocations:
   - {fileID: 677720209}
-  spawnPrefabs:
+  chunkPrefabs:
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
-  spawnClones:
+  chunkClones:
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
-  dayID: 1
+--- !u!1 &1225996008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1225996009}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225996009
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225996008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 459.92407, y: 283.34204, z: -213.93353}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 2111285130}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &1370712937
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +607,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &2111285129
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +618,7 @@ GameObject:
   - 4: {fileID: 2111285130}
   - 114: {fileID: 2111285132}
   m_Layer: 0
-  m_Name: -spawner
+  m_Name: -crystalSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -600,13 +631,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111285129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 264.1007, y: 313.21808, z: -185.37097}
+  m_LocalPosition: {x: -195.82336, y: 29.876038, z: 28.562561}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 938830398}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1225996009}
+  m_RootOrder: 0
 --- !u!114 &2111285132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,5 +655,3 @@ MonoBehaviour:
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
   spawnClones:
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
-  dayID: 1
-  yesterdayID: 0
