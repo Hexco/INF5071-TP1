@@ -838,11 +838,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 648503812}
   - 33: {fileID: 648503811}
-  - 65: {fileID: 648503810}
   - 23: {fileID: 648503809}
   - 114: {fileID: 648503808}
   - 54: {fileID: 648503813}
-  - 65: {fileID: 648503814}
+  - 64: {fileID: 648503814}
   m_Layer: 0
   m_Name: CubePlayer
   m_TagString: Player
@@ -891,18 +890,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!65 &648503810
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 648503807}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &648503811
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -917,7 +904,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 648503807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 251.3, y: 2.62, z: 245.3}
+  m_LocalPosition: {x: 431, y: 2.62, z: 56}
   m_LocalScale: {x: 3, y: 5, z: 3}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -939,8 +926,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &648503814
-BoxCollider:
+--- !u!64 &648503814
+MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -949,8 +936,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Convex: 1
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &660847606
 Prefab:
   m_ObjectHideFlags: 0
@@ -1141,9 +1128,18 @@ MonoBehaviour:
   spawnClones: []
   chunkLocations:
   - {fileID: 677720209}
+  - {fileID: 677720209}
+  - {fileID: 677720209}
+  - {fileID: 677720209}
   chunkPrefabs:
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
+  - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
+  - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
+  - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
   chunkClones:
+  - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
+  - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
+  - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
 --- !u!1 &1225996008
 GameObject:

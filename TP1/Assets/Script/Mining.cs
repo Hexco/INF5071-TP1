@@ -10,6 +10,9 @@ public class Mining : Spawner
     void Start()
     {
         chunkClones[0] = null;
+        chunkClones[1] = null;
+        chunkClones[2] = null;
+        chunkClones[3] = null;
     }
 
     void Update()
@@ -19,7 +22,7 @@ public class Mining : Spawner
             Destroy(chunkClones[0]);
         }
      
-        if (dayID/3 > 20 && chunkClones[0] == null)
+        if (Input.GetKey("e") && chunkClones[0] == null)
         {
             spawnCrystals();
         }
@@ -28,11 +31,17 @@ public class Mining : Spawner
     void spawnCrystals()
     {
         float howMuchCrystals = Random.Range(0, 4);
-        for (float i = 0; i <= howMuchCrystals; i++)
+        for (int i = 0; i <= howMuchCrystals; i++)
         {
-            int rndXYZ = Random.Range(-40, 40);
+            int rndXYZ = Random.Range(-10, 10);
             Vector3 locationDynamique = new Vector3(475 + rndXYZ, 2, 31 + rndXYZ);
-            chunkClones[0] = Instantiate(chunkPrefabs[0], chunkLocations[0].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
+            chunkClones[i] = Instantiate(chunkPrefabs[0], chunkLocations[0].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
         }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        print("FUCK");
+        //Destroy(chunkClones[0]);
     }
 }

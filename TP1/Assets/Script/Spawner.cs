@@ -23,24 +23,29 @@ public class Spawner : MonoBehaviour {
     void Update()
     {
         dayID++;
-        if (dayID == 30)
-        {
-            Destroy(spawnClones[0]);
-        }
-
         if(dayID == tomorrowID)
         {
             int probability = Random.Range(0,300);
             if (probability == 4 && spawnClones[0] == null)
             {
-                spawnCrystal();
+                //spawnCrystal();
             }
             tomorrowID++;
+        }
+
+        if (Input.GetKey("e"))
+        {
+            mineCrystal();
         }
     }
 
     void spawnCrystal()
     {
         spawnClones[0] = Instantiate(spawnPrefabs[0], spawnLocations[0].transform.position, Quaternion.Euler(0,0,0)) as GameObject;
+    }
+
+    void mineCrystal()
+    {
+        Destroy(spawnClones[0]);
     }
 }
