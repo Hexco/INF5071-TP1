@@ -16,11 +16,11 @@ public class Oxygen : MonoBehaviour {
 
 	void Start() {
 		currentHP = maxHP;
-		InvokeRepeating ("caca",0.0f,2.0f);
-		InvokeRepeating ("textDecrease",0.0f,2.0f);
+		InvokeRepeating ("decreaseOxygen",0.0f,2.0f);
+		//InvokeRepeating ("textDecrease",0.0f,2.0f);
 	}
 
-	public void caca(){
+	public void decreaseOxygen(){
 
 		currentHP -= 2f;
 		setHP (currentHP);

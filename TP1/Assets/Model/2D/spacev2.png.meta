@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: e73a147be7f2f2746b9c7308a976d52c
-timeCreated: 1477250064
+guid: ca664c315da855c4381091b3c35917cb
+timeCreated: 1477328286
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: FrontStand
-    21300002: FrontRightArm
-    21300004: FrontLeftArm
-    21300006: BackRightArm
-    21300008: BackLeftArm
-    21300010: LeftStand
-    21300012: BackStand
-    21300014: RightStand
-    21300016: LeftLeftArm
-    21300018: RightRightArm
-    21300020: LeftRightArm
-    21300022: RightLeftArm
+    21300000: spacev2_0
+    21300002: spacev2_1
+    21300004: spacev2_2
+    21300006: spacev2_3
+    21300008: spacev2_4
+    21300010: spacev2_5
+    21300012: spacev2_6
+    21300014: spacev2_7
+    21300016: spacev2_8
+    21300018: spacev2_9
+    21300020: spacev2_10
+    21300022: spacev2_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -65,158 +65,158 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FrontStand
+      name: spacev2_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 96
-        width: 17
-        height: 32
+        x: 0
+        y: 102
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FrontRightArm
+      name: spacev2_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 96
-        width: 17
-        height: 31
+        x: 34
+        y: 102
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FrontLeftArm
+      name: spacev2_2
       rect:
         serializedVersion: 2
-        x: 102
-        y: 96
-        width: 17
-        height: 31
+        x: 68
+        y: 102
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BackRightArm
+      name: spacev2_3
       rect:
         serializedVersion: 2
-        x: 38
-        y: 32
-        width: 17
-        height: 31
+        x: 0
+        y: 68
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BackLeftArm
+      name: spacev2_4
       rect:
         serializedVersion: 2
-        x: 102
-        y: 32
-        width: 17
-        height: 31
+        x: 34
+        y: 68
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: LeftStand
+      name: spacev2_5
       rect:
         serializedVersion: 2
-        x: 6
-        y: 64
-        width: 17
-        height: 32
+        x: 68
+        y: 68
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BackStand
+      name: spacev2_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 32
-        width: 17
-        height: 32
+        x: 0
+        y: 34
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RightStand
+      name: spacev2_7
       rect:
         serializedVersion: 2
-        x: 6
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spacev2_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spacev2_9
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 17
-        height: 32
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: LeftLeftArm
+      name: spacev2_10
       rect:
         serializedVersion: 2
-        x: 38
-        y: 64
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RightRightArm
-      rect:
-        serializedVersion: 2
-        x: 38
+        x: 34
         y: 0
-        width: 20
-        height: 32
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: LeftRightArm
+      name: spacev2_11
       rect:
         serializedVersion: 2
-        x: 102
-        y: 64
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RightLeftArm
-      rect:
-        serializedVersion: 2
-        x: 102
+        x: 68
         y: 0
-        width: 20
-        height: 32
+        width: 34
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
