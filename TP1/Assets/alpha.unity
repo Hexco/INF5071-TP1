@@ -1600,6 +1600,7 @@ MonoBehaviour:
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
   - {fileID: 100002, guid: 096e289e06bde4348838426a43b16e98, type: 3}
+  hero: {fileID: 877777406}
 --- !u!1 &983233227
 GameObject:
   m_ObjectHideFlags: 0

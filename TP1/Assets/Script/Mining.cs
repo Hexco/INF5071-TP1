@@ -6,6 +6,7 @@ public class Mining : Spawner
     public Transform[] chunkLocations;
     public GameObject[] chunkPrefabs;
     public GameObject[] chunkClones;
+	//public GameObject hero;
 
     void Start()
     {
@@ -24,6 +25,9 @@ public class Mining : Spawner
      
         if (Input.GetKey("e") && chunkClones[0] == null)
         {
+			//TODO Peut etre rajouter lanimation de mining ici on verra
+			//Animator animator = hero.GetComponent<Animator> ();
+			//animator.Play ("MiningUp");
             spawnCrystals();
         }
     }
