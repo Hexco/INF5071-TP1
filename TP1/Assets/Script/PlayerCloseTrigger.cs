@@ -41,23 +41,23 @@ public class PlayerCloseTrigger : MonoBehaviour
 			delayed = Time.time + delay;
 			switch (level) {
 			case 0:
-				plant = (GameObject)Instantiate (plantBase, anchorPosi, anchor.transform.rotation, anchor.transform);
+			//	plant = (GameObject)Instantiate (plantBase, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 1;
 				typePlante = "Patate";
 				break;
 			case 1:
 				Destroy (plant);
-				plant = (GameObject)Instantiate (patate1, anchorPosi, anchor.transform.rotation, anchor.transform);
+		//		plant = (GameObject)Instantiate (patate1, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 2;
 				break;
 			case 2:
 				Destroy (plant);
-				plant = (GameObject)Instantiate (patate2, anchorPosi, anchor.transform.rotation, anchor.transform);
+			//	plant = (GameObject)Instantiate (patate2, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 3;
 				break;
 			case 3:
 				Destroy (plant);
-				plant = (GameObject)Instantiate (patate3, anchorPosi, anchor.transform.rotation, anchor.transform);
+//plant = (GameObject)Instantiate (patate3, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 4;
 				break;
 			case 4:
@@ -74,23 +74,23 @@ public class PlayerCloseTrigger : MonoBehaviour
 			delayed = Time.time + delay;
 			switch (level) {
 			case 0:
-				plant = (GameObject)Instantiate (plantBase, anchorPosi, anchor.transform.rotation, anchor.transform);
+			//	plant = (GameObject)Instantiate (plantBase, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 1;
 				typePlante = "Arbre";
 				break;
 			case 1:
 				Destroy (plant);
-				plant = (GameObject)Instantiate (arbre1, anchorPosi, anchor.transform.rotation, anchor.transform);
+			//	plant = (GameObject)Instantiate (arbre1, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 2;
 				break;
 			case 2:
 				Destroy (plant);
-				plant = (GameObject)Instantiate (arbre2, anchorPosi, anchor.transform.rotation, anchor.transform);
+			//	plant = (GameObject)Instantiate (arbre2, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 3;
 				break;
 			case 3:
 				Destroy (plant);
-				plant = (GameObject)Instantiate (arbre3, anchorPosi, anchor.transform.rotation, anchor.transform);
+			//	plant = (GameObject)Instantiate (arbre3, anchorPosi, anchor.transform.rotation, anchor.transform);
 				level = 4;
 				break;
 			case 4:

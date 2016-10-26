@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Hunger : MonoBehaviour {
 
 	public float maxHP = 100f;
-	public float currentHP;
+	public static float currentHP;
 	public GameObject hpObject;
 
 	public void textDecrease(){
@@ -16,7 +16,7 @@ public class Hunger : MonoBehaviour {
 
 	void Start() {
 		currentHP = maxHP;
-		InvokeRepeating ("decreaseHunger",0.0f,5.0f);
+		InvokeRepeating ("decreaseHunger",0.0f,1.0f);
 		//InvokeRepeating ("textDecrease",0.0f,5.0f);
 	}
 
