@@ -24,7 +24,7 @@ public class Energy : MonoBehaviour {
 	public void decreaseEnergy(){
 
 		currentHP -= 1f;
-		setHP (currentHP);
+		setHP (currentHP>0?currentHP:0);
 	}
 
 	public void setHP(float hp){

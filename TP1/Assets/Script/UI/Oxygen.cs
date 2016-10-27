@@ -21,9 +21,8 @@ public class Oxygen : MonoBehaviour {
 	}
 
 	public void decreaseOxygen(){
-
 		currentHP -= 2f;
-		setHP (currentHP);
+		setHP (currentHP>0?currentHP:0);
 	}
 
 	public void setHP(float hp){

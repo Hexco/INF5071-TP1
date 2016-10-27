@@ -21,9 +21,8 @@ public class Hunger : MonoBehaviour {
 	}
 
 	public void decreaseHunger(){
-
 		currentHP -= 7f;
-		setHP (currentHP);
+		setHP (currentHP>0?currentHP:0);
 		if (currentHP < 0) {
 			Debug.Log ("Caca");
 		}
