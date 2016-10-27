@@ -1,21 +1,17 @@
 fileFormatVersion: 2
-guid: 9426d58880913a04e969713401b4fbc3
-timeCreated: 1477521839
+guid: a931c53e9dc224e43860783ab9c03325
+timeCreated: 1477542678
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Camera
-    100002: Lamp
-    100004: Ruppee
-    100006: //RootNode
-    400000: Camera
-    400002: Lamp
-    400004: Ruppee
-    400006: //RootNode
-    2300000: Ruppee
-    3300000: Ruppee
-    4300000: Ruppee
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2300000: default
+    3300000: default
+    4300000: default
   materials:
     importMaterials: 1
     materialName: 0
@@ -23,7 +19,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
