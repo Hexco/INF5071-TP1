@@ -22,7 +22,6 @@ public class EndDay : MonoBehaviour {
 			var pots = GameObject.FindGameObjectsWithTag("PlantPotTrigger");
 			foreach (var pot in pots) {
 				playerCloseTrigger = pot.GetComponent<PlayerCloseTrigger>();
-				Debug.Log (playerCloseTrigger);
 				playerCloseTrigger.EndDay ();
 			}
 			delayed = Time.time + delay;
