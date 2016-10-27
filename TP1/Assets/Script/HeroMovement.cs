@@ -28,11 +28,6 @@ public class HeroMovement : MonoBehaviour {
 	}
 	
 	string findSide(){
-		Debug.Log ("------------------------------------------");
-		Debug.Log ("Up : " + facingUp);
-		Debug.Log ("Down : " + facingDown);
-		Debug.Log ("Left : " + facingLeft);
-		Debug.Log ("Right : " + facingRight);
 		if (facingUp == true){
 			return "Up";
 		} else if (facingDown == true){
@@ -45,6 +40,12 @@ public class HeroMovement : MonoBehaviour {
 		return null;
 	}
 
+	void setParameterAnimator(string first, string second, string third){
+		animator.SetBool (first,false);
+		animator.SetBool (second,false);
+		animator.SetBool (third,false);
+
+	}
 
 	void setFacingFalse(){
 		facingUp = false;
@@ -53,40 +54,49 @@ public class HeroMovement : MonoBehaviour {
 		facingDown = false;
 	}
 
+	void playSecretAnimation(){
+		animator.SetBool ("Secret", true);
+	}
 	void FixedUpdate(){
 		if (
 			animator.GetCurrentAnimatorStateInfo (0).IsName ("MiningUp") ||
 			animator.GetCurrentAnimatorStateInfo (0).IsName ("MiningDown") ||
 			animator.GetCurrentAnimatorStateInfo (0).IsName ("MiningLeft") ||
-			animator.GetCurrentAnimatorStateInfo (0).IsName ("MiningRight")
+			animator.GetCurrentAnimatorStateInfo (0).IsName ("MiningRight") ||
+			animator.GetCurrentAnimatorStateInfo(0).IsName("Secret")
 		) {
 			animator.SetBool ("UpMining", false);
 			animator.SetBool ("DownMining", false);
 			animator.SetBool ("LeftMining", false);
 			animator.SetBool ("RightMining", false);
+			animator.SetBool ("Secret",false);
 			return;
 		}
 			
-		if (Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.S)) {
+		if (Input.GetAxis ("Vertical") < 0) {
 			
 			playWalkingAnimation ("Down");
 			setFacingFalse ();
+			setParameterAnimator ("Up","Left","Right");
 			facingDown = true;
 
-		} else if (Input.GetKey (KeyCode.UpArrow) || Input.GetKey (KeyCode.W)) {
+		} else if (Input.GetAxis ("Vertical") > 0) {
 			playWalkingAnimation ("Up");
+			setParameterAnimator ("Down","Left","Right");
 			setFacingFalse ();
 			facingUp = true;
 
-		} else if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
+		} else if (Input.GetAxis ("Horizontal") < 0) {
 			
 			playWalkingAnimation ("Left");
+			setParameterAnimator ("Up","Down","Right");
 			setFacingFalse ();
 			facingLeft = true;
 
-		} else if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
+		} else if (Input.GetAxis ("Horizontal") > 0) {
 			
 			playWalkingAnimation ("Right");
+			setParameterAnimator ("Up","Left","Down");
 			setFacingFalse ();
 			facingRight = true;
 
@@ -94,13 +104,15 @@ public class HeroMovement : MonoBehaviour {
 			
 			playMiningAnimation ();
 
+		} else if (Input.GetKey(KeyCode.P)){
+
+			playSecretAnimation ();
+
 		} else {
 			animator.SetBool ("Down", false);
 			animator.SetBool ("Up", false);
 			animator.SetBool ("Left", false);
 			animator.SetBool ("Right", false);
-
-
 		}
 
 
