@@ -694,7 +694,6 @@ GameObject:
   - 4: {fileID: 454229742}
   - 218: {fileID: 454229741}
   - 154: {fileID: 454229740}
-  - 54: {fileID: 454229743}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -756,21 +755,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &454229743
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 454229739}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &501886146
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +914,8 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 70167913}
-  delay: 1
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
+  delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
   actionText3: {fileID: 822576353}
@@ -1000,7 +985,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b074f0540a5fe734d846a65c3a47927f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.016001938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b074f0540a5fe734d846a65c3a47927f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1753,7 +1738,8 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 1620973463}
-  delay: 1
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
+  delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
   actionText3: {fileID: 822576353}
@@ -2417,7 +2403,8 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 1825961287}
-  delay: 1
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
+  delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
   actionText3: {fileID: 822576353}
@@ -2608,21 +2595,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: bc2fbf2822923df41a8bd2651ca5e69a, type: 3}
   m_PrefabInternal: {fileID: 1863066298}
---- !u!54 &1592914414
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1592914411}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!135 &1592914415
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2922,11 +2894,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc2fbf2822923df41a8bd2651ca5e69a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.016082937
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc2fbf2822923df41a8bd2651ca5e69a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 166.45
+      value: 152.6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc2fbf2822923df41a8bd2651ca5e69a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3016,7 +2988,8 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 1697694912}
-  delay: 1
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
+  delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
   actionText3: {fileID: 822576353}

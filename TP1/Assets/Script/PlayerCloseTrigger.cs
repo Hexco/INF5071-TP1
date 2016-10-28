@@ -17,6 +17,7 @@ public class PlayerCloseTrigger : MonoBehaviour
 	public GameObject citrouille2;
 	public GameObject citrouille3;
 	public GameObject anchor;
+	public GameObject patate;
 	public float delay;
 
 	public Text actionText1;
@@ -45,7 +46,6 @@ public class PlayerCloseTrigger : MonoBehaviour
 	{
 		level = 0;
 		delayed = 0.0f;
-		delay = 1.0f;
 		anchorPosi = anchor.transform.position;
 		anchorPosi.y = anchorPosi.y + 0.1f;
 		anchorAngle = anchor.transform.rotation;
@@ -155,6 +155,13 @@ public class PlayerCloseTrigger : MonoBehaviour
 	}
 
 	void HarvestPlant () {
+		if (typePlante == "Patate") {
+			float n = Random.Range (3.0f, 8.0f);
+			Debug.Log (n);
+			for (float i = 0.0f; i < n ; i++) {
+				Instantiate (patate, new Vector3 (250, 10 + 3 * i, 250), plant.transform.localRotation);
+			}
+		}
 		DestroyPlant ();
 	}
 
