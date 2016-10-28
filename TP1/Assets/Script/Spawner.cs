@@ -32,7 +32,6 @@ public class Spawner : MonoBehaviour {
     {
         for (int i = 0; i < 3; i++)
         {
-            int probability = Random.Range(0, 100);
             spawnClones[i] = Instantiate(spawnPrefabs[i], spawnLocations[i].transform.position, Quaternion.Euler(0, 0, 0)) as GameObject;
         }   
     }
