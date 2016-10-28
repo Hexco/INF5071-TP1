@@ -6,8 +6,8 @@ public class Spawner : MonoBehaviour {
     public Transform[] spawnLocations;
     public GameObject[] spawnPrefabs;
     public GameObject[] spawnClones;
-    protected int dayID=1;
-    protected int tomorrowID = 0;
+    public static int dayID=1;
+    protected int tomorrowID = 2;
 
     public int getDayID()
     {
@@ -17,15 +17,13 @@ public class Spawner : MonoBehaviour {
     void Start()
     {
         spawnCrystal();
-        tomorrowID = 2;
     }
 
     void Update()
     {
-        dayID++;
         if(dayID == tomorrowID)
         {
-            //spawnCrystal();
+            spawnCrystal();
             tomorrowID++;
         }
     }
