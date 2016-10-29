@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010802641768}
   - 65: {fileID: 65000013666620252}
-  - 114: {fileID: 114000013969355402}
+  - 114: {fileID: 114000011017185022}
   m_Layer: 0
   m_Name: Ice
   m_TagString: Untagged
@@ -133,7 +133,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 2, z: 15}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000013969355402
+--- !u!114 &114000011017185022
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

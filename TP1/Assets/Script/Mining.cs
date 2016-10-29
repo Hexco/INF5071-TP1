@@ -18,13 +18,13 @@ public class Mining : MiningInterface
 
     public void spawnCrystals()
     {
-        float howMuchCrystals = Random.Range(0, 5);
+        float howMuchCrystals = Random.Range(0, 3);
         for (int i = 0; i <= howMuchCrystals; i++)
         {
             int rndXYZ = Random.Range(-10, 10);
             Vector3 locationDynamique = new Vector3(x + rndXYZ, 2, z + rndXYZ);
-            chunkClones[0] = Instantiate(chunkPrefabs[0], chunkLocations[0].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
-            chunkClones[0].tag = "Item";
+            chunkClones[i] = Instantiate(chunkPrefabs[i], chunkLocations[i].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
+            chunkClones[i].tag = "Item";
         }
     }
 }

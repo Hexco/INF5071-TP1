@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011133379186}
   - 65: {fileID: 65000013143053428}
-  - 114: {fileID: 114000013551646772}
+  - 114: {fileID: 114000010545953846}
+  - 114: {fileID: 114000010084605108}
   m_Layer: 0
   m_Name: iceChunk
   m_TagString: Untagged
@@ -115,12 +116,12 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010905146270}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000013551646772
+--- !u!114 &114000010084605108
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -131,3 +132,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d42d2d19f83faa45ab942e8200935f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000010545953846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010905146270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0082c2707a53f144eaf6d9540376ba11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  spriteNeutral: {fileID: 21300016, guid: 16771235f074f124f8a6b98e66bf7ef9, type: 3}
+  spriteHighlighted: {fileID: 21300000, guid: 7594df2028ca906458727e8a944bab99, type: 3}
+  maxSize: 3
