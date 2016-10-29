@@ -18,11 +18,11 @@ public class Inventory : MonoBehaviour {
 
     public GameObject slotPrefab;
 
-    private List<GameObject> allSlots;
+    private static List<GameObject> allSlots;
 
-    private int emptySlot;
+    private static int emptySlot;
 
-   
+
 
     // Use this for initialization
     void Start () {
@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+      
     }
 
     private void CreateLayout()
@@ -77,9 +77,10 @@ public class Inventory : MonoBehaviour {
 
     }
 
-    public bool AddItem(Item item)
+    public static bool AddItem(Item item)
     {
-        if(item.maxSize == 1)
+
+        if (item.maxSize == 1)
         {
             PlaceEmpty(item);
             return true;
@@ -107,7 +108,7 @@ public class Inventory : MonoBehaviour {
         return false;
     }
 
-    private bool PlaceEmpty(Item item)
+    private static bool PlaceEmpty(Item item)
     {
         if(emptySlot > 0)
         {

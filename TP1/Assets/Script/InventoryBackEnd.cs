@@ -8,9 +8,6 @@ public class InventoryBackEnd : MonoBehaviour {
 
     void Start()
     {
-        print("Init Crystal: " + InventoryBackEnd.nbCrystal);
-        print("Init Ice: " + InventoryBackEnd.nbIce);
-
         nbIce = 0;
         nbCrystal = 0;
     }
