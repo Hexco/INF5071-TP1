@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010802641768}
   - 65: {fileID: 65000013666620252}
-  - 114: {fileID: 114000011017185022}
+  - 114: {fileID: 114000013417220110}
   m_Layer: 0
   m_Name: Ice
   m_TagString: Untagged
@@ -133,7 +133,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 2, z: 15}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000011017185022
+--- !u!114 &114000013417220110
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -141,6 +141,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011568293454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9cd9d42e0cd5134f8553895311c4bd4, type: 3}
+  m_Script: {fileID: 11500000, guid: c76d31a3d2af4af469f03b226501e637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IceChunkLocations:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  IceChunkPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  IceChunkClones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

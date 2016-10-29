@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010096744148}
   - 65: {fileID: 65000013445412208}
-  - 114: {fileID: 114000011729989286}
+  - 114: {fileID: 114000012441154450}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Untagged
@@ -133,7 +133,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 2, z: 15}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000011729989286
+--- !u!114 &114000012441154450
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -141,6 +141,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010208338706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9cd9d42e0cd5134f8553895311c4bd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f421359192890a4aae5660585b28667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chunkLocations:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  chunkPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  chunkClones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
