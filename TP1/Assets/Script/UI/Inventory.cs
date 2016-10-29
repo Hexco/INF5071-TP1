@@ -99,6 +99,10 @@ public class Inventory : MonoBehaviour {
                     }
                 }
             }
+            if(emptySlot > 0)
+            {
+                PlaceEmpty(item);
+            }
         }
         return false;
     }
