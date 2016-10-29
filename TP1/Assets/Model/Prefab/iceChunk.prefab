@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011133379186}
   - 65: {fileID: 65000013143053428}
-  - 114: {fileID: 114000010207936606}
+  - 114: {fileID: 114000013551646772}
   m_Layer: 0
   m_Name: iceChunk
   m_TagString: Untagged
@@ -120,7 +120,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000010207936606
+--- !u!114 &114000013551646772
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -128,6 +128,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010905146270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4640a56fb8bcc26478c0eaf2ec2cc1e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d42d2d19f83faa45ab942e8200935f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

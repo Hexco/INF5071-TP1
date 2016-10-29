@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010272029388}
   - 65: {fileID: 65000014236839684}
-  - 114: {fileID: 114000012827286124}
+  - 114: {fileID: 114000011702723114}
   m_Layer: 0
   m_Name: crystalChunk
   m_TagString: Untagged
@@ -120,7 +120,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000012827286124
+--- !u!114 &114000011702723114
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -128,6 +128,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010498799790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4640a56fb8bcc26478c0eaf2ec2cc1e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 8025ec17f1cea2944b7eef32a437ae74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

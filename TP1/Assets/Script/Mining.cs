@@ -24,6 +24,7 @@ public class Mining : MiningInterface
             int rndXYZ = Random.Range(-10, 10);
             Vector3 locationDynamique = new Vector3(x + rndXYZ, 2, z + rndXYZ);
             chunkClones[0] = Instantiate(chunkPrefabs[0], chunkLocations[0].transform.position = locationDynamique, Quaternion.Euler(0, 0, 0)) as GameObject;
+            chunkClones[0].tag = "Item";
         }
     }
 }
