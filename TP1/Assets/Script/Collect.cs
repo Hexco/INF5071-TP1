@@ -2,8 +2,24 @@
 using System.Collections;
 
 public class Collect : MonoBehaviour {
-    void OnCollisionEnter(Collision other)
+
+    public Inventory inventory;
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(this.gameObject);
+        if(other.tag == "Item")
+        {
+            inventory.AddItem(other.GetComponent<Item>());
+        }
     }
 }

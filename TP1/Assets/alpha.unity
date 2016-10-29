@@ -1645,6 +1645,7 @@ GameObject:
   - 114: {fileID: 877777409}
   - 54: {fileID: 877777408}
   - 114: {fileID: 877777407}
+  - 114: {fileID: 877777414}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -1767,6 +1768,18 @@ Transform:
   - {fileID: 2144540745}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &877777414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 877777406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb51a4623e4d9664f8be7e97f4efa2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1337865136}
 --- !u!1 &907419800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2531,7 @@ GameObject:
   - 114: {fileID: 1337865134}
   - 114: {fileID: 1337865136}
   m_Layer: 5
-  m_Name: Settings
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
