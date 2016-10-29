@@ -223,13 +223,13 @@ MonoBehaviour:
   - {fileID: 1029685505}
   - {fileID: 1029685505}
   chunkPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
   chunkClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
 --- !u!1 &54002030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,13 +1028,13 @@ MonoBehaviour:
   - {fileID: 1176144854}
   - {fileID: 1176144854}
   chunkPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
   chunkClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
 --- !u!1001 &630851308
 Prefab:
   m_ObjectHideFlags: 0
@@ -1977,13 +1977,13 @@ MonoBehaviour:
   - {fileID: 677720209}
   - {fileID: 677720209}
   chunkPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
   chunkClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
 --- !u!1 &956149505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,13 +2607,13 @@ MonoBehaviour:
   - {fileID: 1257977773}
   - {fileID: 1257977773}
   chunkPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
   chunkClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
 --- !u!1 &1337865132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,13 +3016,13 @@ MonoBehaviour:
   - {fileID: 1257231689}
   - {fileID: 1257231689}
   chunkPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
   chunkClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
+  - {fileID: 1000010498799790, guid: f817fe0a36ef35c48bd6b63fd10d72cf, type: 2}
 --- !u!1 &1620973463 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8e677acf93c91cb41b309d5c8931c722, type: 3}
@@ -3155,13 +3155,13 @@ MonoBehaviour:
   - {fileID: 1310364972}
   - {fileID: 556859031}
   spawnPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000011568293454, guid: fddd0d13aff64ee4b8c3414aa4f67985, type: 2}
+  - {fileID: 1000011568293454, guid: fddd0d13aff64ee4b8c3414aa4f67985, type: 2}
+  - {fileID: 1000011568293454, guid: fddd0d13aff64ee4b8c3414aa4f67985, type: 2}
   spawnClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000011568293454, guid: fddd0d13aff64ee4b8c3414aa4f67985, type: 2}
+  - {fileID: 1000011568293454, guid: fddd0d13aff64ee4b8c3414aa4f67985, type: 2}
+  - {fileID: 1000011568293454, guid: fddd0d13aff64ee4b8c3414aa4f67985, type: 2}
 --- !u!1 &1811485042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,13 +3637,13 @@ MonoBehaviour:
   - {fileID: 1556937503}
   - {fileID: 1556937503}
   chunkPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
   chunkClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
+  - {fileID: 1000010905146270, guid: 629cdbda050e04c48b06efc970eea3ea, type: 2}
 --- !u!4 &2063108573 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f0f29cc388f1d964ca225347fa1bc55c, type: 3}
@@ -3770,13 +3770,13 @@ MonoBehaviour:
   - {fileID: 12591274}
   - {fileID: 1620488006}
   spawnPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010208338706, guid: 23ef08028f352f04aa006d366a8d5759, type: 2}
+  - {fileID: 1000010208338706, guid: 23ef08028f352f04aa006d366a8d5759, type: 2}
+  - {fileID: 1000010208338706, guid: 23ef08028f352f04aa006d366a8d5759, type: 2}
   spawnClones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010208338706, guid: 23ef08028f352f04aa006d366a8d5759, type: 2}
+  - {fileID: 1000010208338706, guid: 23ef08028f352f04aa006d366a8d5759, type: 2}
+  - {fileID: 1000010208338706, guid: 23ef08028f352f04aa006d366a8d5759, type: 2}
 --- !u!1001 &2112465781
 Prefab:
   m_ObjectHideFlags: 0
