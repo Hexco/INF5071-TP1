@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Inventory : MonoBehaviour {
+public class Inventory : MonoBehaviour
+{
 
     private RectTransform inventoryRect;
 
@@ -18,20 +19,22 @@ public class Inventory : MonoBehaviour {
 
     public GameObject slotPrefab;
 
-    private static List<GameObject> allSlots;
+    private List<GameObject> allSlots;
 
-    private static int emptySlot;
+    private int emptySlot;
 
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         CreateLayout();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-      
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 
     private void CreateLayout()
@@ -52,9 +55,9 @@ public class Inventory : MonoBehaviour {
 
         int columns = slots / rows;
 
-        for(int y = 0; y < rows; y++)
+        for (int y = 0; y < rows; y++)
         {
-            for(int x = 0; x < columns; x++)
+            for (int x = 0; x < columns; x++)
             {
                 GameObject newSlot = (GameObject)Instantiate(slotPrefab);
 
@@ -77,9 +80,8 @@ public class Inventory : MonoBehaviour {
 
     }
 
-    public static bool AddItem(Item item)
+    public bool AddItem(Item item)
     {
-
         if (item.maxSize == 1)
         {
             PlaceEmpty(item);
@@ -87,20 +89,20 @@ public class Inventory : MonoBehaviour {
         }
         else
         {
-            foreach(GameObject slot in allSlots)
+            foreach (GameObject slot in allSlots)
             {
                 Slot tmp = slot.GetComponent<Slot>();
 
-                if(!tmp.IsEmpty)
+                if (!tmp.IsEmpty)
                 {
-                    if(tmp.CurrentItem.type == item.type && tmp.IsAvailable)
+                    if (tmp.CurrentItem.type == item.type && tmp.IsAvailable)
                     {
                         tmp.AddItem(item);
                         return true;
                     }
                 }
             }
-            if(emptySlot > 0)
+            if (emptySlot > 0)
             {
                 PlaceEmpty(item);
             }
@@ -108,15 +110,15 @@ public class Inventory : MonoBehaviour {
         return false;
     }
 
-    private static bool PlaceEmpty(Item item)
+    private bool PlaceEmpty(Item item)
     {
-        if(emptySlot > 0)
+        if (emptySlot > 0)
         {
-            foreach(GameObject slot in allSlots)
+            foreach (GameObject slot in allSlots)
             {
                 Slot tmp = slot.GetComponent<Slot>();
 
-                if(tmp.IsEmpty)
+                if (tmp.IsEmpty)
                 {
                     tmp.AddItem(item);
                     emptySlot--;

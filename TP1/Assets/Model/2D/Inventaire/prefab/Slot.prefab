@@ -22,6 +22,7 @@ GameObject:
   - 222: {fileID: 222000013677098794}
   - 114: {fileID: 114000014191997516}
   - 114: {fileID: 114000013193587604}
+  - 114: {fileID: 114000012248133992}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &114000012248133992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010315642668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdeb9a4614863343a3f280459260928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stackTxt: {fileID: 114000011147193470}
+  slotEmpty: {fileID: 21300000, guid: 10573f996f0b7614bac3439be28fd197, type: 3}
+  slotHighlight: {fileID: 21300000, guid: 1b70645a9da8602408735593a9c5a28f, type: 3}
 --- !u!114 &114000013193587604
 MonoBehaviour:
   m_ObjectHideFlags: 1
