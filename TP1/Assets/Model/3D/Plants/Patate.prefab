@@ -26,9 +26,10 @@ GameObject:
   - 135: {fileID: 135000011936860934}
   - 64: {fileID: 64000012213374882}
   - 114: {fileID: 114000012418447534}
+  - 114: {fileID: 114000012491882882}
   m_Layer: 0
   m_Name: Patate
-  m_TagString: Patate
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,6 +138,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b966a18b7ae04de479772ccdfe87316a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012491882882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012289677886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0082c2707a53f144eaf6d9540376ba11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  spriteNeutral: {fileID: 21300000, guid: 72e98daf245e00c4da74490252892174, type: 3}
+  spriteHighlighted: {fileID: 21300000, guid: 72e98daf245e00c4da74490252892174, type: 3}
+  maxSize: 5
 --- !u!135 &135000011936860934
 SphereCollider:
   m_ObjectHideFlags: 1
