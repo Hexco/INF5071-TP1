@@ -25,6 +25,7 @@ GameObject:
   - 54: {fileID: 54000010414617902}
   - 135: {fileID: 135000011936860934}
   - 64: {fileID: 64000012213374882}
+  - 114: {fileID: 114000012418447534}
   m_Layer: 0
   m_Name: Patate
   m_TagString: Patate
@@ -125,6 +126,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000012418447534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012289677886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b966a18b7ae04de479772ccdfe87316a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135000011936860934
 SphereCollider:
   m_ObjectHideFlags: 1

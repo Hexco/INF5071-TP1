@@ -19,13 +19,13 @@ public class EndDay : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Time.time > delayed && playerIn && Input.GetKey ("j")) {
+			delayed = Time.time + delay;
             Spawner.dayID++;
 			var pots = GameObject.FindGameObjectsWithTag("PlantPotTrigger");
 			foreach (var pot in pots) {
 				playerCloseTrigger = pot.GetComponent<PlayerCloseTrigger>();
 				playerCloseTrigger.EndDay ();
 			}
-			delayed = Time.time + delay;
 		}
 	}
 
