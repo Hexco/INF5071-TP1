@@ -9,26 +9,18 @@ public class Hunger : MonoBehaviour {
 	public static float currentHP;
 	public GameObject hpObject;
 
-	public void textDecrease(){
-		GameObject.Find("faimText").GetComponent<Text> ().text = currentHP.ToString();
-
-	}
-
 	void Start() {
 		currentHP = maxHP;
 		InvokeRepeating ("decreaseHunger",0.0f,6.0f);
-		//InvokeRepeating ("textDecrease",0.0f,5.0f);
 	}
 
 	public void decreaseHunger(){
 		currentHP -= 7f;
-		setHP (currentHP>0?currentHP:0);
-		if (currentHP < 0) {
-			Debug.Log ("Caca");
-		}
+		setHP (currentHP);
 	}
 
 	public void setHP(float hp){
+		GameObject hpObject = GameObject.Find ("HungerBar");
 		float y = hpObject.transform.localScale.y;
 		float z = hpObject.transform.localScale.z;
 		float x = hp / maxHP;
@@ -37,7 +29,7 @@ public class Hunger : MonoBehaviour {
 
 	public void farmSomePotato(){
 		currentHP = maxHP;
-		setHP (maxHP);
-		textDecrease ();
+		setHP (currentHP);
+
 	}
 }

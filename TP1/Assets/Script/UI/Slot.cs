@@ -81,7 +81,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     {
         if(!IsEmpty)
         {
-            items.Pop().Use();
+			Item itemPopped = items.Pop ();
+			findOutWhatItemPopped (itemPopped);
+            itemPopped.Use();
             stackTxt.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
 
             if(IsEmpty)
@@ -91,6 +93,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler
             }
         }
     }
+
+	private void findOutWhatItemPopped(Item item){
+		if (item.getType () == Item.ItemType.MINERAL) {
+			Debug.Log ("Mineral Bitch");
+			Energy energy = new Energy ();
+			energy.reloadEnergy ();
+		} else if (item.getType () == Item.ItemType.SEED) {
+			Debug.Log ("Seed Bitch");
+			new Hunger ().farmSomePotato ();
+		}
+	}
 
     public void OnPointerClick(PointerEventData eventData)
     {

@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public  enum ItemType {MINERAL, WATER, SEED}
 
 public class Item : MonoBehaviour
 {
+	public enum ItemType {MINERAL, WATER, SEED}
+
     public ItemType type;
 
     public Sprite spriteNeutral;
@@ -26,4 +27,8 @@ public class Item : MonoBehaviour
 
         }
     }
+
+	public ItemType getType(){
+		return type;
+	}
 }

@@ -2906,7 +2906,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 877777406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 250, y: 5.71, z: 250}
+  m_LocalPosition: {x: 238.2, y: 5.71, z: 256.3}
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -4726,7 +4726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
-  currentHP: 0
   hpObject: {fileID: 548699397}
 --- !u!114 &1370712940
 MonoBehaviour:
@@ -4753,7 +4752,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
-  currentHP: 0
   hpObject: {fileID: 1608862768}
 --- !u!114 &1370712942
 MonoBehaviour:

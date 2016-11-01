@@ -103,6 +103,12 @@ public class HeroMovement : MonoBehaviour {
 		} else if (Input.GetKey(KeyCode.E)){
 			
 			playMiningAnimation ();
+			Hunger hunger = new Hunger ();
+			Oxygen oxygen = new Oxygen ();
+			Energy energy = new Energy ();
+			oxygen.mineMinerals ();
+			energy.reloadEnergy ();
+			hunger.farmSomePotato ();
 
 		} else if (Input.GetKey(KeyCode.P)){
 
