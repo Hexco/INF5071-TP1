@@ -1723,7 +1723,7 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 70167913}
-  patate: {fileID: 1634887215, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
@@ -2906,7 +2906,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 877777406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 357.7, y: 5.71, z: 327.1}
+  m_LocalPosition: {x: 250, y: 5.71, z: 250}
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -3258,7 +3258,7 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 1620973463}
-  patate: {fileID: 0}
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
@@ -4533,7 +4533,7 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 1825961287}
-  patate: {fileID: 0}
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
@@ -6072,7 +6072,7 @@ MonoBehaviour:
   citrouille2: {fileID: 0}
   citrouille3: {fileID: 0}
   anchor: {fileID: 1697694912}
-  patate: {fileID: 0}
+  patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
   actionText1: {fileID: 2049047565}
   actionText2: {fileID: 907419802}
