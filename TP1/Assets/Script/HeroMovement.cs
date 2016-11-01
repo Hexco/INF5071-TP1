@@ -4,10 +4,10 @@ using System.Collections;
 public class HeroMovement : MonoBehaviour {
 	private Rigidbody2D rigi;
 	public float maxSpeed = 10f;
-	bool facingUp = false;
-	bool facingLeft = false;
-	bool facingRight = false;
-	bool facingDown = false;
+	static bool facingUp = false;
+	static bool facingLeft = false;
+	static bool facingRight = false;
+	static bool facingDown = false;
 
 	Animator animator;
 
@@ -27,7 +27,7 @@ public class HeroMovement : MonoBehaviour {
 		animator.SetBool (side + "Mining", true);
 	}
 	
-	string findSide(){
+	public string findSide(){
 		if (facingUp == true){
 			return "Up";
 		} else if (facingDown == true){
@@ -74,35 +74,33 @@ public class HeroMovement : MonoBehaviour {
 		}
 			
 		if (Input.GetAxis ("Vertical") < 0) {
-			
-			playWalkingAnimation ("Down");
 			setFacingFalse ();
 			setParameterAnimator ("Up","Left","Right");
 			facingDown = true;
+			playWalkingAnimation ("Down");
 
 		} else if (Input.GetAxis ("Vertical") > 0) {
-			playWalkingAnimation ("Up");
 			setParameterAnimator ("Down","Left","Right");
 			setFacingFalse ();
 			facingUp = true;
+			playWalkingAnimation ("Up");
 
 		} else if (Input.GetAxis ("Horizontal") < 0) {
-			
-			playWalkingAnimation ("Left");
 			setParameterAnimator ("Up","Down","Right");
 			setFacingFalse ();
 			facingLeft = true;
+			playWalkingAnimation ("Left");
+
 
 		} else if (Input.GetAxis ("Horizontal") > 0) {
-			
-			playWalkingAnimation ("Right");
 			setParameterAnimator ("Up","Left","Down");
 			setFacingFalse ();
 			facingRight = true;
+			playWalkingAnimation ("Right");
 
 		} else if (Input.GetKey(KeyCode.E)){
 			
-			playMiningAnimation ();
+			//playMiningAnimation ();
 
 
 		} else if (Input.GetKey(KeyCode.P)){

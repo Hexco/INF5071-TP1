@@ -30,6 +30,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     {
         get { return items.Peek();  }
     }
+		
 
     // Use this for initialization
     void Start()
@@ -81,9 +82,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     {
         if(!IsEmpty)
         {
-			Item itemPopped = items.Pop ();
-			findOutWhatItemPopped (itemPopped);
-            itemPopped.Use();
+			Item itemPeeked = items.Peek ();
+			findOutWhatItemPopped (itemPeeked);
+			itemPeeked = items.Pop ();
+            itemPeeked.Use();
             stackTxt.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
 
             if(IsEmpty)
@@ -96,12 +98,12 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
 	private void findOutWhatItemPopped(Item item){
 		if (item.getType () == Item.ItemType.MINERAL) {
-			Debug.Log ("Mineral Bitch");
-			Energy energy = new Energy ();
-			energy.reloadEnergy ();
+			new Energy ().reloadEnergy ();
 		} else if (item.getType () == Item.ItemType.SEED) {
-			Debug.Log ("Seed Bitch");
 			new Hunger ().farmSomePotato ();
+		} else if (item.getType () == Item.ItemType.WATER) {
+			InventoryBackEnd.nbWater++;
+			Water.increaseWater ();
 		}
 	}
 

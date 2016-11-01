@@ -31,13 +31,21 @@ public class Mining : MiningInterface
         }
     }
 
-    void OnCollisionEnter(Collision other)
+	void playMiningAnimation(){
+		Animator animator = GameObject.Find("Hero").GetComponent<Animator> ();
+		string side = new HeroMovement().findSide ();
+		animator.SetBool (side + "Mining", true);
+	}
+
+	IEnumerator OnCollisionEnter(Collision other)
     {
         if (Input.GetKey("e"))
         {
-            //TODO Peut etre rajouter lanimation de mining ici on verra
-            //Animator animator = hero.GetComponent<Animator> ();
-            //animator.Play ("MiningUp");
+			AudioSource sound = GameObject.Find ("PickAxe").GetComponent<AudioSource> ();
+			sound.Play ();
+			playMiningAnimation ();
+			yield return new WaitForSeconds (3.2f);
+			sound.Stop ();
             mined = 1;
             x = other.transform.position.x;
             z = other.transform.position.z;
