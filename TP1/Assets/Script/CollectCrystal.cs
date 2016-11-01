@@ -7,6 +7,8 @@ public class CollectCrystal : MonoBehaviour
     {
         if (InventoryBackEnd.bagSize > (InventoryBackEnd.nbCrystal + InventoryBackEnd.nbIce))
         {
+			AudioSource sound = GameObject.Find ("CollectSound").GetComponent<AudioSource> ();
+			sound.Play ();
             InventoryBackEnd.nbCrystal+=1;
             //C'est la que sa pete pcq sa tombe sur un null. Comme si les element set dans la scene etait pas vraiment la.
             //Si tu trouve comment faire pour que se soit pas null tell me. Quand sa sera pu null, fait juste decommenter 

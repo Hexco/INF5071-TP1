@@ -19,6 +19,8 @@ public class Collect : MonoBehaviour {
     {
         if(other.tag == "Item")
         {
+			AudioSource sound = GameObject.Find ("CollectSound").GetComponent<AudioSource> ();
+			sound.Play ();
             inventory.AddItem(other.GetComponent<Item>());
         }
     }

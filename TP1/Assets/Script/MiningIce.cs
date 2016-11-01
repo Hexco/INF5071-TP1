@@ -37,7 +37,7 @@ public class MiningIce : MiningInterface
 		animator.SetBool (side + "Mining", true);
 	}
 
-	IEnumerator OnCollisionEnter(Collision other)
+	IEnumerator OnTriggerStay(Collider other)
     {
         if (Input.GetKey("e"))
         {

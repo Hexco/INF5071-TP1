@@ -9,6 +9,7 @@ public class Mining : MiningInterface
     public static float mined = 0;
     public static float x = 0;
     public static float z = 0;
+	public Object miningIcon;
 
     void Update()
     {
@@ -36,20 +37,23 @@ public class Mining : MiningInterface
 		string side = new HeroMovement().findSide ();
 		animator.SetBool (side + "Mining", true);
 	}
+		
 
-	IEnumerator OnCollisionEnter(Collision other)
-    {
-        if (Input.GetKey("e"))
-        {
+	IEnumerator OnTriggerStay(Collider other){
+		if (Input.GetKey("e"))
+		{
 			AudioSource sound = GameObject.Find ("PickAxe").GetComponent<AudioSource> ();
 			sound.Play ();
 			playMiningAnimation ();
 			yield return new WaitForSeconds (3.2f);
 			sound.Stop ();
-            mined = 1;
-            x = other.transform.position.x;
-            z = other.transform.position.z;
-            Destroy(this.gameObject);
-        }
-    }
+			mined = 1;
+			x = other.transform.position.x;
+			z = other.transform.position.z;
+			Destroy(this.gameObject);
+		}
+	}
+		
+
+
 }
