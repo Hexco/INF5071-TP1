@@ -16,7 +16,7 @@ public class Hunger : MonoBehaviour {
 
 	void Start() {
 		currentHP = maxHP;
-		InvokeRepeating ("decreaseHunger",0.0f,1.0f);
+		InvokeRepeating ("decreaseHunger",0.0f,6.0f);
 		//InvokeRepeating ("textDecrease",0.0f,5.0f);
 	}
 
