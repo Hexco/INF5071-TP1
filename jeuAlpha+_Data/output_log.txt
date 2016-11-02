@@ -1,0 +1,44 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 820M (ID=0x1140)
+    Vendor:   NVIDIA
+    VRAM:     1999 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+Platform assembly: C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Karl\Documents\INF5071-TP1\jeuAlpha+_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.068607 ms
+The referenced script on this Behaviour (Game Object 'HungerBar') is missing!
+ 
+(Filename:  Line: 1656)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+The tree Crystal couldn't be instanced because the prefab contains no valid mesh renderer.
+ 
+(Filename:  Line: 159)
+
+UnloadTime: 5.202899 ms
+TerrainCollider: MeshCollider is not supported on terrain at the moment.
+ 
+(Filename:  Line: 184)
+
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 975.
+Total: 0.809252 ms (FindLiveObjects: 0.065924 ms CreateObjectMapping: 0.026843 ms MarkObjects: 0.451207 ms  DeleteObjects: 0.263303 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3388 -> priority: 1 
