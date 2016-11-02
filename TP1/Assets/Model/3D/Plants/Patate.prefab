@@ -152,7 +152,7 @@ MonoBehaviour:
   type: 2
   spriteNeutral: {fileID: 21300000, guid: 72e98daf245e00c4da74490252892174, type: 3}
   spriteHighlighted: {fileID: 21300000, guid: 6016fc5553988f0478f2efb172b73ccc, type: 3}
-  maxSize: 1
+  maxSize: 5
 --- !u!135 &135000011936860934
 SphereCollider:
   m_ObjectHideFlags: 1
