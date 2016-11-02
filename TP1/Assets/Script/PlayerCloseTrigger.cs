@@ -13,9 +13,6 @@ public class PlayerCloseTrigger : MonoBehaviour
 	public GameObject arbre1;
 	public GameObject arbre2;
 	public GameObject arbre3;
-	public GameObject citrouille1;
-	public GameObject citrouille2;
-	public GameObject citrouille3;
 	public GameObject anchor;
 	public GameObject patate;
 	public float delay;
@@ -34,7 +31,6 @@ public class PlayerCloseTrigger : MonoBehaviour
 
 	private SortedList patateList;
 	private SortedList arbreList;
-	private SortedList citrouilleList;
 	private SortedList plantList;
 
 	private Vector3 anchorPosi;
@@ -52,7 +48,7 @@ public class PlayerCloseTrigger : MonoBehaviour
 		typePlante = "";
 		watered = false;
 		// reset Text
-		ReSetActionText();
+		ReSetActionText ();
 
 		patateList = new SortedList ();
 		patateList.Add (0, plantBase);
@@ -66,37 +62,24 @@ public class PlayerCloseTrigger : MonoBehaviour
 		arbreList.Add (2, arbre2);
 		arbreList.Add (3, arbre3);
 
-		citrouilleList = new SortedList ();
-		citrouilleList.Add (0, plantBase);
-		citrouilleList.Add (1, citrouille1);
-		citrouilleList.Add (2, citrouille2);
-		citrouilleList.Add (3, citrouille2);
-
 		plantList = new SortedList ();
 		plantList.Add ("Patate", patateList);
 		plantList.Add ("Arbre", arbreList);
-		plantList.Add ("Citrouille", citrouilleList);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
 		if (Time.time > delayed && playerIn) {
-			switch (level){
+			switch (level) {
 			case 0:
 				if (Input.GetKey ("j")) {
 					PlantPlant (plantBase);
 					typePlante = "Patate";
 					endAction ();
-				}
-				if (Input.GetKey ("k")) {
+				} else if (Input.GetKey ("k")) {
 					PlantPlant (plantBase);
 					typePlante = "Arbre";
-					endAction ();
-				}
-				if (Input.GetKey ("l")) {
-					PlantPlant (plantBase);
-					typePlante = "Citrouille";
 					endAction ();
 				}
 				break;
@@ -116,28 +99,33 @@ public class PlayerCloseTrigger : MonoBehaviour
 				if (Input.GetKey ("j")) {
 					DestroyPlant ();
 					endAction ();
-				}
-				if (Input.GetKey ("k")) {
+				} else if (Input.GetKey ("k") && typePlante == "Patate") {
 					HarvestPlant ();
+					endAction ();
+				} else if (Input.GetKey ("k") && typePlante == "Arbre") {
+					WaterPlant ();
 					endAction ();
 				}
 				break;
 			}
 		}
 	}
-		
-	void endAction() {
+
+	void endAction ()
+	{
 		delayed = Time.time + delay;
 		SetActionText ();
 	}
 
-	void PlantPlant(GameObject gameObj){
+	void PlantPlant (GameObject gameObj)
+	{
 		Destroy (plant);
 		plant = (GameObject)Instantiate (gameObj, anchorPosi, RandomRotate (), anchor.transform);
 		level++;
 	}
 
-	void WaterPlant(){
+	void WaterPlant ()
+	{
 		if (!watered) {
 			if (InventoryBackEnd.nbWater > 0) {
 				InventoryBackEnd.nbWater--;
@@ -148,23 +136,26 @@ public class PlayerCloseTrigger : MonoBehaviour
 		}
 	}
 
-	void DestroyPlant () {
+	void DestroyPlant ()
+	{
 		level = 0;
 		Destroy (plant);
 	}
 
-	void HarvestPlant () {
+	void HarvestPlant ()
+	{
 		if (typePlante == "Patate") {
 			float n = Random.Range (3.0f, 8.0f);
 			Debug.Log (n);
-			for (float i = 0.0f; i < n ; i++) {
+			for (float i = 0.0f; i < n; i++) {
 				Instantiate (patate, new Vector3 (250, 10 + 3 * i, 250), plant.transform.localRotation);
 			}
 		}
 		DestroyPlant ();
 	}
 
-	public void EndDay () {
+	public void EndDay ()
+	{
 		if (level > 0) {
 			if (watered) {
 				if (level < 4) {
@@ -195,12 +186,12 @@ public class PlayerCloseTrigger : MonoBehaviour
 		}
 	}
 
-	void SetActionText(){
+	void SetActionText ()
+	{
 		switch (level) {
 		case 0:
 			actionText1.text = "Press J to plant Potato";
 			actionText2.text = "Press K to plant Tree";
-			actionText3.text = "Press L to plant Majestic Pumpkin";
 			actionText3.color = Color.white;
 			break;
 		case 1:
@@ -225,7 +216,11 @@ public class PlayerCloseTrigger : MonoBehaviour
 		case 4:
 			// TODO recolter
 			actionText1.text = "Press J to destroy " + typePlante;
-			actionText2.text = "Press K to harvest " + typePlante;
+			if (typePlante == "Patate") {
+				actionText2.text = "Press K to harvest " + typePlante;
+			} else if (typePlante == "Arbre") {
+				actionText2.text = "Press K to water " + typePlante;
+			}
 			if (watered) {
 				actionText3.text = "Watered";
 				actionText3.color = Color.blue;
@@ -245,14 +240,16 @@ public class PlayerCloseTrigger : MonoBehaviour
 		}
 	}
 
-	void ReSetActionText(){
+	void ReSetActionText ()
+	{
 		actionText1.text = "";
 		actionText2.text = "";
 		actionText3.text = "";
 	}
 
-	Quaternion RandomRotate(){
-		anchorAngle.eulerAngles = new Vector3(anchorAngle.eulerAngles.x, anchorAngle.eulerAngles.y, Random.rotation.eulerAngles.z);
+	Quaternion RandomRotate ()
+	{
+		anchorAngle.eulerAngles = new Vector3 (anchorAngle.eulerAngles.x, anchorAngle.eulerAngles.y, Random.rotation.eulerAngles.z);
 		return anchorAngle;
 	}
 }
