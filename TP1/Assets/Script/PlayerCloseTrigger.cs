@@ -127,12 +127,12 @@ public class PlayerCloseTrigger : MonoBehaviour
 	void WaterPlant ()
 	{
 		if (!watered) {
-			if (InventoryBackEnd.nbWater > 0) {
+			//if (InventoryBackEnd.nbWater > 0) {
 				InventoryBackEnd.nbWater--;
 				Water.decreaseWater ();
 				watered = true;
 				dry = false;
-			}
+			//}
 		}
 	}
 

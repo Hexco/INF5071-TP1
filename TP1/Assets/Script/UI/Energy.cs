@@ -3,33 +3,41 @@ using System.Collections;
 using UnityEngine.UI;
 
 
-public class Energy : MonoBehaviour {
+public class Energy : MonoBehaviour
+{
 
 	public float maxHP = 100f;
 	public static float currentHP;
 	public GameObject hpObject;
 
-	void Start() {
+	void Start ()
+	{
 		currentHP = maxHP;
-		InvokeRepeating ("decreaseEnergy",0.0f,2.0f);
+		InvokeRepeating ("decreaseEnergy", 0.0f, 2.0f);
 	}
 
-	public void decreaseEnergy(){
+	public void decreaseEnergy ()
+	{
 
 		currentHP -= 1f;
 		setHP (currentHP);
 	}
 
-	public void setHP(float hp){
+	public void setHP (float hp)
+	{
 		GameObject hpObject = GameObject.Find ("EnergyBar");
 		float y = hpObject.transform.localScale.y;
 		float z = hpObject.transform.localScale.z;
 		float x = hp / maxHP;
-		hpObject.transform.localScale = new Vector3 (x,y,z);
+		hpObject.transform.localScale = new Vector3 (x, y, z);
 	}
 
-	public void reloadEnergy(){
-		currentHP = maxHP;
-		setHP (maxHP);
+	public void reloadEnergy ()
+	{
+		currentHP += 25;
+		if (currentHP > maxHP) {
+			currentHP = maxHP;
+		}
+		setHP (currentHP);
 	}
 }
