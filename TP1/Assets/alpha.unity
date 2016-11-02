@@ -1919,9 +1919,6 @@ MonoBehaviour:
   arbre1: {fileID: 100000, guid: b35a9563f7238674696b57931222cc28, type: 3}
   arbre2: {fileID: 100000, guid: df7f61de5165fce4daedc2469cb68fde, type: 3}
   arbre3: {fileID: 100000, guid: 0d047d841483d0745946b179b4afd6b4, type: 3}
-  citrouille1: {fileID: 0}
-  citrouille2: {fileID: 0}
-  citrouille3: {fileID: 0}
   anchor: {fileID: 70167913}
   patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
@@ -3720,9 +3717,6 @@ MonoBehaviour:
   arbre1: {fileID: 100000, guid: b35a9563f7238674696b57931222cc28, type: 3}
   arbre2: {fileID: 100000, guid: df7f61de5165fce4daedc2469cb68fde, type: 3}
   arbre3: {fileID: 100000, guid: 0d047d841483d0745946b179b4afd6b4, type: 3}
-  citrouille1: {fileID: 0}
-  citrouille2: {fileID: 0}
-  citrouille3: {fileID: 0}
   anchor: {fileID: 1620973463}
   patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
@@ -5265,9 +5259,6 @@ MonoBehaviour:
   arbre1: {fileID: 100000, guid: b35a9563f7238674696b57931222cc28, type: 3}
   arbre2: {fileID: 100000, guid: df7f61de5165fce4daedc2469cb68fde, type: 3}
   arbre3: {fileID: 100000, guid: 0d047d841483d0745946b179b4afd6b4, type: 3}
-  citrouille1: {fileID: 0}
-  citrouille2: {fileID: 0}
-  citrouille3: {fileID: 0}
   anchor: {fileID: 1825961287}
   patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
@@ -6949,9 +6940,9 @@ RectTransform:
   - {fileID: 78275531}
   m_Father: {fileID: 54002034}
   m_RootOrder: 4
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -512, y: 166}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 62, y: -125}
   m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814808337
@@ -7112,9 +7103,6 @@ MonoBehaviour:
   arbre1: {fileID: 100000, guid: b35a9563f7238674696b57931222cc28, type: 3}
   arbre2: {fileID: 100000, guid: df7f61de5165fce4daedc2469cb68fde, type: 3}
   arbre3: {fileID: 100000, guid: 0d047d841483d0745946b179b4afd6b4, type: 3}
-  citrouille1: {fileID: 0}
-  citrouille2: {fileID: 0}
-  citrouille3: {fileID: 0}
   anchor: {fileID: 1697694912}
   patate: {fileID: 1000012289677886, guid: 0b4ec74d46df49c48a5179321f4a8f7e, type: 2}
   delay: 0.5
