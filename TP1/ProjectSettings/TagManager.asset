@@ -9,6 +9,9 @@ TagManager:
   - PlantPotTrigger
   - Patate
   - Item
+  - MiningPickIcon
+  - DoorOut
+  - DoorIn
   layers:
   - Default
   - TransparentFX
