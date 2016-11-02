@@ -8,17 +8,27 @@ ModelImporter:
     100000: DomeHalf
     100002: //RootNode
     100004: DomeHalfGlass
+    100006: Dome
+    100008: DomeGlass
     400000: DomeHalf
     400002: //RootNode
     400004: DomeHalfGlass
+    400006: Dome
+    400008: DomeGlass
     2300000: DomeHalf
     2300002: DomeHalfGlass
     2300004: //RootNode
+    2300006: Dome
+    2300008: DomeGlass
     3300000: DomeHalf
     3300002: DomeHalfGlass
     3300004: //RootNode
+    3300006: Dome
+    3300008: DomeGlass
     4300000: DomeHalf
     4300002: DomeHalfGlass
+    4300004: Dome
+    4300006: DomeGlass
     7400000: Default Take
     9500000: //RootNode
   materials:
