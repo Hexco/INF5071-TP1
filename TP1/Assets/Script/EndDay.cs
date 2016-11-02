@@ -21,6 +21,7 @@ public class EndDay : MonoBehaviour {
 		if (Time.time > delayed && playerIn && Input.GetKey ("j")) {
 			delayed = Time.time + delay;
             Spawner.dayID++;
+            IceSpawner.dayIDIce++;
 			var pots = GameObject.FindGameObjectsWithTag("PlantPotTrigger");
 			foreach (var pot in pots) {
 				playerCloseTrigger = pot.GetComponent<PlayerCloseTrigger>();
