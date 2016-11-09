@@ -1,7 +1,7 @@
 # INF5071-TP1
 
-Executable pour MAC dans le dossier JeuAlphaMac
-P.S. Non-testé sur MAC car nous avons pas de MAC.
+Executable pour MAC dans le dossier JeuAlphaMac<br>
+**P.S. Non-testé sur MAC car nous avons pas de MAC.**
 
 
 ## Controle du jeu
