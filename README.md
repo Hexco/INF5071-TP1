@@ -2,6 +2,7 @@
 
 
 ## Controle du jeu
-WASD - Movement du personnage
-E - Minage des mineraux
-P - Devenir Super Saiyan
+
+* WASD - Movement du personnage
+* E - Minage des mineraux
+* P - Devenir Super Saiyan
